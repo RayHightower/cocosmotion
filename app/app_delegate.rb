@@ -39,6 +39,10 @@ class AppDelegate
     true
   end
 
+  def shouldAutorotateToInterfaceOrientation(orientation)
+    [UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight].include? orientation
+  end
+
   def applicationWillResignActive(app)
     @director.pause if @nav_controller.visibleViewController == @director
   end
