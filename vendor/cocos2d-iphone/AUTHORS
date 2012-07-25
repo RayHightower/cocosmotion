@@ -20,6 +20,7 @@ People/companies who were/are contributing code to cocos2d for iPhone (alphabeti
 * Andrew0 (https://github.com/andrew0)
 	Fixed crash on NSThread+block
 	CatmullRom action compiles OK on Mac Release mode
+	Fixed ccMouseEnter/Exit events on EventDispatcher
 
 * Atte Kotiranta (https://github.com/akotiranta)
 	EaseActions: Ease Actions works OK with floating point values
@@ -27,6 +28,9 @@ People/companies who were/are contributing code to cocos2d for iPhone (alphabeti
 
 * Brian Chapados (http://chapados.org/):
 	Made easier to port to cocos2d v2.x from v1.x by adding alpha testing shader, added missing CCSpriteFrameCache
+
+* calinseciu:
+	Fixed memory leak on CCDirector#createStatsLabel
 
 * Chere Loque:
 	Added support for NPOT texture in CCRenderTexture
@@ -45,7 +49,11 @@ People/companies who were/are contributing code to cocos2d for iPhone (alphabeti
 
 * Gene Peterson (http://zynga.com)
 	Dimension is a property on CCLabelTTF
-	
+	Scheduler: Patch for when dealloc was also calling removeUpdateFromHash, causing a possible double free
+
+* geraldtjy
+	Added Director.popToRootScene method
+
 * Giles Hammond:
 	iOS Director uses DisplayLink timestamp for more stable delta times
 
@@ -67,6 +75,9 @@ People/companies who were/are contributing code to cocos2d for iPhone (alphabeti
 	Added tests for LabelTTF vertical alignment
 	Added tetts for Scheduler/ActionManager resume/pause all actions
 	Director doesn't raise assert when startAnimation is called twice
+	
+* Krzysztof Zablocki (http://merowing.info):
+	Added support for Depth Stencil in RenderTexture
 
 * Lam Pham (http://www.fancyratstudios.com/)
 	CCProgressTimer: Improved API
@@ -92,6 +103,9 @@ People/companies who were/are contributing code to cocos2d for iPhone (alphabeti
 * mlilback:
 	Added KVO pattern for CCDirector#isPaused
 
+* Nestor Todorov ( https://github.com/supernes ):
+	Particle handle premultiplied + opacity correctly
+
 * Nicky Weber (https://github.com/nickyEnjoysWoogoo):
 	Added ccDrawFilledPoly to DrawingPrimitives
 	
@@ -103,6 +117,12 @@ People/companies who were/are contributing code to cocos2d for iPhone (alphabeti
 	
 * Scott Lembcke (AKA slembcke) (http://chipmunk-physics.net/)
 	Mentor & contributor of new Physics + cocos2d integration via nodeToParentTransform
+
+* Sebastian Goztyla:
+	Fixed buffer overrun in CocosDenshion
+
+* Serg Scout (http://kidstamatic.com/):
+	Fixed texture alpha when converting RGBA8 textures to RGB5A1
 
 * Sergey Tikhonov (AKA haqu) (http://haqu.net)
 	Tests: Improved Shader test. Fixed memory leak in Guassian Blur test
