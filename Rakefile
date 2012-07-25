@@ -3,8 +3,6 @@ require 'motion/project'
 
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
-  app.name = 'cocomotion'
-  app.codesign_certificate = "iPhone Developer: Sean Scally (KL2M9DH95B)"
   app.name = 'cocosmotion'
 
   app.vendor_project( "vendor/cocos2d-iphone", :xcode,
@@ -14,5 +12,4 @@ Motion::Project::App.setup do |app|
   app.frameworks += ["OpenGLES", "OpenAL", "AVFoundation", "AudioToolbox", "QuartzCore"]
   app.libs << "/usr/lib/libz.dylib"
 
-  app.interface_orientations = [:landscape_right]
 end
