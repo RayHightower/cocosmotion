@@ -9,6 +9,8 @@ Motion::Project::App.setup do |app|
     :xcodeproj => "cocos2d-ios.xcodeproj", :target => "cocos2d", :products => ["libcocos2d.a"],
     :headers_dir => "cocos2d")
 
+  app.vendor_project "vendor/cocos2d-iphone/CocosDenshion/CocosDenshion", :static
+
   app.frameworks += ["OpenGLES", "OpenAL", "AVFoundation", "AudioToolbox", "QuartzCore"]
   app.libs << "/usr/lib/libz.dylib"
 
