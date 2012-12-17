@@ -17,7 +17,7 @@ Known Issues
 
 Sean Scally
 [twitter](http://twitter.com/s_scally)
-[github](http://github.com/anydiem)
+[github](http://github.com/scally)
 
 Ricardo Quesada
 [github](https://github.com/ricardoquesada)
