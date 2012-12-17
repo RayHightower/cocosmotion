@@ -6,6 +6,7 @@ Example project for [RubyMotion](http://rubymotion.com) and [Cocos2d](http://coc
 The following changes were made:
 
 * Removed Resources/templates/tools folder to get the repo size down
+* cocos2d-iPhone had its project's "treat warnings as errors" setting turned off since this version of cocos2d has some iOS6 deprecation warnings keeping it from building.
 
 Known Issues
 ==
@@ -17,6 +18,9 @@ Known Issues
 Sean Scally
 [twitter](http://twitter.com/s_scally)
 [github](http://github.com/anydiem)
+
+Ricardo Quesada
+[github](https://github.com/ricardoquesada)
 
 The fine folks at Cocos2d-iPhone and RubyMotion!
 
