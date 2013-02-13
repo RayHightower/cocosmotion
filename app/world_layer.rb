@@ -3,7 +3,8 @@ class DemoBase < CCLayer
         super
 
         @sprite1 = CCSprite.spriteWithFile "grossinis_sister1.png"
-        @sprite2 = CCSprite.spriteWithFile "grossini.png"
+        # @sprite2 = CCSprite.spriteWithFile "grossini.png"
+        @sprite2 = CCSprite.spriteWithFile "tiger.jpg"
         @sprite3 = CCSprite.spriteWithFile "grossinis_sister2.png"
 
 		self.addChild @sprite1, z:3
