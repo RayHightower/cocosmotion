@@ -2,10 +2,10 @@ class DemoBase < CCLayer
     def onEnter
         super
 
-        @sprite1 = CCSprite.spriteWithFile "grossinis_sister1.png"
+        @sprite1 = CCSprite.spriteWithFile "cobra.jpg"
         # @sprite2 = CCSprite.spriteWithFile "grossini.png"
-        @sprite2 = CCSprite.spriteWithFile "tiger.jpg"
-        @sprite3 = CCSprite.spriteWithFile "grossinis_sister2.png"
+        @sprite2 = CCSprite.spriteWithFile "horse.jpg"
+        @sprite3 = CCSprite.spriteWithFile "tiger.jpg"
 
 		self.addChild @sprite1, z:3
 		self.addChild @sprite2, z:2
